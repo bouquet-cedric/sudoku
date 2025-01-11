@@ -1,0 +1,102 @@
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.flex {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.finis {
+  width: 100%;
+  height: 10%;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+th > input {
+  text-align: center;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  width: 90%;
+}
+
+@media (max-width: 767px) {
+  .finis {
+    font-size: large;
+  }
+  th > input {
+    font-size: medium;
+  }
+  input.inputLarge {
+    font-size: large;
+  }
+  input.inputSmall {
+    font-size: x-small;
+  }
+  th {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .finis {
+    font-size: medium;
+  }
+  th > input {
+    font-size: small;
+  }
+  input.inputLarge {
+    font-size: medium;
+  }
+  input.inputSmall {
+    font-size: x-small;
+  }
+  th {
+    font-size: small;
+  }
+}
+
+@media (min-width: 768px) {
+  .finis {
+    font-size: xx-large;
+  }
+  th > input {
+    font-size: x-large;
+  }
+  input.inputLarge {
+    font-size: x-large;
+  }
+  input.inputSmall {
+    font-size: x-small;
+  }
+  th {
+    font-size: x-large;
+  }
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  height: 90%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px dashed black;
+  text-align: center;
+  width: 10%;
+  height: 10%;
+}
+
+.invalid {
+  color: red;
+  text-decoration: line-through;
+}
+
+.valid {
+  color: lightgreen;
+}

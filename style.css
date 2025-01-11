@@ -1,0 +1,45 @@
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+}
+.finis {
+  width: 100%;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: cursive;
+}
+table {
+  width: 100%;
+  border: 1px solid black;
+  height: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px dashed black;
+  text-align: center;
+  width: 10%;
+  height: 10%;
+  font-size: x-large;
+}
+
+th > input {
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: x-large;
+  font-weight: bold;
+  width: 5rem;
+}
+
+.invalid {
+  color: red;
+  text-decoration: line-through;
+}
+
+.valid {
+  color: lightgreen;
+}

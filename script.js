@@ -303,6 +303,11 @@ function generateSudokuGrid(numToRemove) {
 }
 
 window.onload = function () {
+  if (screen.orientation) {
+    screen.orientation.lock("landscape").catch((err) => {
+      console.log("Erreur de verrouillage d'orientation :", err);
+    });
+  }
   modele = generateSudokuGrid(56);
   addControls();
   initTable(9, modele);
